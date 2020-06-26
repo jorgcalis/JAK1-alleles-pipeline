@@ -18,7 +18,8 @@ This pipeline is part of the study described in Gruber et al. (2020 Immunity) (l
   sample,Patient_JAK1_2,BAMalignmentFiles/PBMC_Patient_JAK1_2.bam \
   sample,Patient_JAK1_3,BAMalignmentFiles/PBMC_Patient_JAK1_3.bam \
   sample,Patient_JAK1_4,BAMalignmentFiles/PBMC_Patient_JAK1_4.bam \
-  > GITHUB_JAK1umiCountPipeline.out```
+  > GITHUB_JAK1umiCountPipeline.out
+```
 
 The input for this run are the sample names and per sample bam alignment files.
 The script returns the following files for each sample:
