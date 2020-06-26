@@ -7,7 +7,6 @@ step 1: The analysis of V3 sequencing reads was performed with Kleins' indrops.p
 
 step 2: Next, we analyzed the bam alignment files to obtain JAK1 allele specific transcript counts with single-cell resolution. Here we use the custom build pipeline in script GITHUB_JAK1umiCountPipeline.py. For our study, we ran it following this command: 
 
-GITHUB_JAK1umiCountPipeline.py command
 ```nohup ./GITHUB_JAK1umiCountPipeline.py outputDirectory=JAK1alignmentsAnalysis/ sample,HealthyControl_JAK1_1,BAMalignmentFiles/PBMC_HealthyControl_JAK1_1.bam sample,HealthyControl_JAK1_2,BAMalignmentFiles/PBMC_HealthyControl_JAK1_2.bam sample,HealthyControl_JAK1_3,BAMalignmentFiles/PBMC_HealthyControl_JAK1_3.bam sample,HealthyControl_JAK1_4,BAMalignmentFiles/PBMC_HealthyControl_JAK1_4.bam sample,Patient_JAK1_1,BAMalignmentFiles/PBMC_Patient_JAK1_1.bam sample,Patient_JAK1_2,BAMalignmentFiles/PBMC_Patient_JAK1_2.bam sample,Patient_JAK1_3,BAMalignmentFiles/PBMC_Patient_JAK1_3.bam sample,Patient_JAK1_4,BAMalignmentFiles/PBMC_Patient_JAK1_4.bam > GITHUB_JAK1umiCountPipeline.out &```
 
 The input for this run are the per sample indicated sample names and bam alignment files, as well as an output directory.
