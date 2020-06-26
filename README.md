@@ -1,13 +1,16 @@
 # JAK1-alleles-pipeline
-Pipeline to extract JAK1 allelic expression counts at single-cell resolution from an InDrops experiment. This pipeline is part of the study described in Gruber et al. (2020 Immunity) (link to study here). 
+Pipeline to extract JAK1 allelic expression counts at single-cell resolution from an InDrops experiment.
+This pipeline is part of the study described in Gruber et al. (2020 Immunity) (link to study here). 
 
-step 1: The analysis of V3 sequencing reads was performed with Kleins' indrops.py pipeline (https://github.com/indrops/indrops). From this analysis we obtained single-cell gene expression matrices, and alignment (bam) files with UMI and cell barcode attributes.
+*Step 1: Data processing of InDrops sequencing reads was performed with the indrops.py pipeline (https://github.com/indrops/indrops). From this analysis we obtained single-cell gene expression matrices, and alignment (bam) files with UMI and cell barcode attributes.
 
 <indrops command here>
 
-step 2: Next, we analyzed the bam alignment files to obtain JAK1 allele specific transcript counts with single-cell resolution. Here we use the custom build pipeline in script GITHUB_JAK1umiCountPipeline.py. For our study, we ran it following this command: 
+*Step 2: BAM files were processed to obtain JAK1 allele specific transcript counts with single-cell resolution. Here we use the custom build pipeline in script GITHUB_JAK1umiCountPipeline.py. For our study, we ran it following this command: 
 
-```nohup ./GITHUB_JAK1umiCountPipeline.py outputDirectory=JAK1alignmentsAnalysis/ sample,HealthyControl_JAK1_1,BAMalignmentFiles/PBMC_HealthyControl_JAK1_1.bam sample,HealthyControl_JAK1_2,BAMalignmentFiles/PBMC_HealthyControl_JAK1_2.bam sample,HealthyControl_JAK1_3,BAMalignmentFiles/PBMC_HealthyControl_JAK1_3.bam sample,HealthyControl_JAK1_4,BAMalignmentFiles/PBMC_HealthyControl_JAK1_4.bam sample,Patient_JAK1_1,BAMalignmentFiles/PBMC_Patient_JAK1_1.bam sample,Patient_JAK1_2,BAMalignmentFiles/PBMC_Patient_JAK1_2.bam sample,Patient_JAK1_3,BAMalignmentFiles/PBMC_Patient_JAK1_3.bam sample,Patient_JAK1_4,BAMalignmentFiles/PBMC_Patient_JAK1_4.bam > GITHUB_JAK1umiCountPipeline.out &```
+```./GITHUB_JAK1umiCountPipeline.py
+  outputDirectory=JAK1alignmentsAnalysis/ sample,HealthyControl_JAK1_1,BAMalignmentFiles/PBMC_HealthyControl_JAK1_1.bam
+  sample,HealthyControl_JAK1_2,BAMalignmentFiles/PBMC_HealthyControl_JAK1_2.bam sample,HealthyControl_JAK1_3,BAMalignmentFiles/PBMC_HealthyControl_JAK1_3.bam sample,HealthyControl_JAK1_4,BAMalignmentFiles/PBMC_HealthyControl_JAK1_4.bam sample,Patient_JAK1_1,BAMalignmentFiles/PBMC_Patient_JAK1_1.bam sample,Patient_JAK1_2,BAMalignmentFiles/PBMC_Patient_JAK1_2.bam sample,Patient_JAK1_3,BAMalignmentFiles/PBMC_Patient_JAK1_3.bam sample,Patient_JAK1_4,BAMalignmentFiles/PBMC_Patient_JAK1_4.bam > GITHUB_JAK1umiCountPipeline.out &```
 
 The input for this run are the per sample indicated sample names and bam alignment files, as well as an output directory.
 The script returns the following files for each sample:
