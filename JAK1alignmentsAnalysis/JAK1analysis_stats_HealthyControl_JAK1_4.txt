@@ -1,0 +1,123 @@
+############################ Stats for run on HealthyControl_JAK1_4 ############################
+Run start: Tue Aug 14 16:42:48 2018
+Output directory: JAK1alignmentsAnalysis/
+Sample name: HealthyControl_JAK1_4 
+BAM(s): 
+ - BAMalignmentFiles/PBMC_HealthyControl_JAK1_4.bam
+
+Running in EnsemblMode GRCh38:
+ - GTFfileName: /data/genomes/Homo_sapiens/Ensembl/GRCh38/Annotation/Genes/Homo_sapiens.GRCh38.88.chr.gtf
+
+#### BAMalignmentFiles/PBMC_HealthyControl_JAK1_4.bam ####
+2364830 aligned reads
+2364830 mono-mapped aligned reads
+0 multi-mapped aligned reads
+
+2354809 JAK1 aligned reads
+- 2256995 aligned to JAK1-wt/mutant locus
+  . 2241974 wild-type
+  . 235 mutant
+  . 14786 undefined
+- 97814 aligned outside the JAK1-wt/mutant locus
+
+10021 non-JAK1 aligned reads (showing top-10)
+ - 846 B2M
+ - 508 RPS3A
+ - 409 multipleGenenames
+ - 380 MT-ND4
+ - 341 RPL13A
+ - 262 S100A8
+ - 250 RPL34
+ - 211 HIST1H4C
+ - 184 RGL1
+ - 163 PRRC2C
+
+
+#### UMI stats based on all bam files ####
+# UMI assigned to either JAK1 wt/mut/undefined/otherLocus or other gene based on read count
+# UMI assigned if at least 2 reads for this assignment
+# UMI assigned to JAK1-wt or JAK1-mutant if at least 0.9 fraction of JAK1-wt+JAK1-mutant reads are assigned to this UMI
+13348 aligned UMIs
+13348 mono-mapped aligned UMIs
+0 multi-mapped aligned UMIs
+
+10874 JAK1 aligned UMIs
+- 6723 aligned to JAK1-wt/mutant locus
+  . 6722 wild-type
+  . 0 mutant
+  . 1 undefined
+- 4151 aligned outside the JAK1-wt/mutant locus
+
+1433 non-JAK1 aligned UMIs (showing top-10)
+ - 98 B2M
+ - 79 RPS3A
+ - 57 S100A8
+ - 54 multipleGenenames
+ - 53 MT-ND4
+ - 51 RPL13A
+ - 47 HIST1H4C
+ - 32 RPL34
+ - 26 TOMM7
+ - 24 PRRC2C
+
+UMI-to-UMI distance
+within cells average/median: 3.57 / 4.0
+between cells average/median: 4.28 / 4.0
+
+#### Cell identification stats based on all bam files ####
+ - 2011 cells with at least 1 any reads (2364830 reads)
+ - 1473 cells with at least 10 any reads (2361729 reads)
+ - 549 cells with at least 100 any reads (2336060 reads)
+ - 387 cells with at least 1000 any reads (2272348 reads)
+ - 38 cells with at least 10000 any reads (551630 reads)
+ - 933 cells with at least 1 JAK1locus reads (2256995 reads)
+ - 586 cells with at least 10 JAK1locus reads (2256265 reads)
+ - 533 cells with at least 100 JAK1locus reads (2254312 reads)
+ - 384 cells with at least 1000 JAK1locus reads (2194301 reads)
+ - 35 cells with at least 10000 JAK1locus reads (503890 reads)#### Final transcript identification stats based on all bam files ####
+# UMI assigned to either JAK1 wt/mut/undefined/otherLocus or other gene based on read count
+# UMI assigned if at least 2 reads for this assignment
+# UMI assigned to JAK1-wt or JAK1-mutant if at least 0.9 fraction of JAK1-wt+JAK1-mutant reads are assigned to this UMI
+
+ - 1349 cells with 0 JAK1-wt transcripts
+ - 2011 cells with 0 JAK1-mutant transcripts
+ - 158 cells with 1 JAK1-wt transcripts
+ - 0 cells with 1 JAK1-mutant transcripts
+ - 50 cells with 2 JAK1-wt transcripts
+ - 0 cells with 2 JAK1-mutant transcripts
+ - 33 cells with 3 JAK1-wt transcripts
+ - 0 cells with 3 JAK1-mutant transcripts
+ - 18 cells with 4 JAK1-wt transcripts
+ - 0 cells with 4 JAK1-mutant transcripts
+ - 21 cells with 5 JAK1-wt transcripts
+ - 0 cells with 5 JAK1-mutant transcripts
+ - 30 cells with 6 JAK1-wt transcripts
+ - 0 cells with 6 JAK1-mutant transcripts
+ - 20 cells with 7 JAK1-wt transcripts
+ - 0 cells with 7 JAK1-mutant transcripts
+ - 21 cells with 8 JAK1-wt transcripts
+ - 0 cells with 8 JAK1-mutant transcripts
+ - 16 cells with 9 JAK1-wt transcripts
+ - 0 cells with 9 JAK1-mutant transcripts
+ - 295 cells with 10+ JAK1-wt transcripts
+ - 0 cells with 10+ JAK1-mutant transcripts
+
+ 662 cells with only JAK1-wt transcripts
+ 0 cells with only JAK1-mutant transcripts
+ 0 cells both JAK1-mutant and JAK1-wt transcripts
+ 1349 cells with no JAK1-mutant/wt transcripts
+
+#### read depth versus transcript identification ####
+0.01 fraction of reads (n=23308): 616 transcripts
+0.02 fraction of reads (n=47072): 711 transcripts
+0.04 fraction of reads (n=94160): 949 transcripts
+0.08 fraction of reads (n=188517): 1337 transcripts
+0.16 fraction of reads (n=376143): 2090 transcripts
+0.25 fraction of reads (n=590552): 2833 transcripts
+0.4 fraction of reads (n=941849): 3856 transcripts
+0.5 fraction of reads (n=1178446): 4382 transcripts
+0.6 fraction of reads (n=1412485): 4866 transcripts
+0.7 fraction of reads (n=1648128): 5370 transcripts
+0.8 fraction of reads (n=1884498): 5853 transcripts
+0.9 fraction of reads (n=2119624): 6295 transcripts
+1.0 fraction of reads (n=2354809): 6723 transcripts
