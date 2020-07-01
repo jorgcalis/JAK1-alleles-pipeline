@@ -8,7 +8,8 @@ This pipeline is part of the study described in Gruber et al. (2020 Immunity) (l
 
 *Step 2: BAM files were processed to obtain JAK1 allele specific transcript counts with single-cell resolution. Here we use the custom build pipeline in script GITHUB_JAK1umiCountPipeline.py. For our study, we ran it following this command: 
 
-```./GITHUB_JAK1umiCountPipeline.py
+```
+./GITHUB_JAK1umiCountPipeline.py \
   outputDirectory=JAK1alignmentsAnalysis/ \
   sample,HealthyControl_JAK1_1,BAMalignmentFiles/PBMC_HealthyControl_JAK1_1.bam \
   sample,HealthyControl_JAK1_2,BAMalignmentFiles/PBMC_HealthyControl_JAK1_2.bam \
