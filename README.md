@@ -1,6 +1,6 @@
 # JAK1-alleles-pipeline
 Pipeline to extract JAK1 allelic expression counts at single-cell resolution from an InDrops experiment.
-This pipeline is part of the study described in Gruber et al. (2020 Immunity) (link to study here). 
+This pipeline is part of the study described in Gruber et al. (2020 Immunity, https://www.cell.com/immunity/fulltext/S1074-7613(20)30313-7). 
 
 *Step 1: Data processing of InDrops sequencing reads was performed with the indrops.py pipeline (https://github.com/indrops/indrops). From this analysis we obtained single-cell gene expression matrices, and alignment (bam) files with UMI and cell barcode attributes.
 
